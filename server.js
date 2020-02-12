@@ -2,10 +2,7 @@ const express = require("express");
 const PORT = process.env.PORT || 8080;
 const app = express();
 const exphbs = require("express-handlebars");
-
-// trying to define the router using all the routes inside the async function in burgers_controller
-const routes = require("./controllers/burgers_controller.js").routes;
-const router = routes();
+const router = require("./controllers/burgers_controller.js");
 
 app.use(express.static("public"));
 
