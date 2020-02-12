@@ -1,18 +1,6 @@
 const orm = require("../config/orm.js");
 
 
-// redo all of this with await, ugh
-// let burger = {
-//   all: function() {
-//     });
-//   },
-//   // The variables cols and vals are arrays.
-//   create: function() {
-//     });
-//   },
-//   update: function() {
-//     });
-//   }
-// };
-
+// is this stupid file supposed to just call all the orm methods one for one
+//that seems dumb and i'm not doing that right now
 module.exports = cat;
