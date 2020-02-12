@@ -7,7 +7,7 @@ async function routes(){
 
     router.get("/", function(req, res) {
         let data = await orm.selectAll("burgers");
-        res.render("index", {burgers : data});
+        res.render("index", {burger : data});
     });
     
     router.post("/api/burger", function(req, res) {
