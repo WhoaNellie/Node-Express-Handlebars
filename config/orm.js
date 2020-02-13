@@ -28,6 +28,15 @@ let orm = {
         resolve(result);
       });
     });
+  },
+  deleteOne: function (table, id) {
+    return new Promise((resolve, reject) => {
+      let queryString = `delete from ${table} where id=${id};`;
+      connection.query(queryString, function (err, result) {
+        if (err) reject(err);
+        resolve(result);
+      });
+    });
   }
 };
 

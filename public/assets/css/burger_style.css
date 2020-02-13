@@ -2,6 +2,32 @@ body{
     font-family: sans-serif;
 }
 
+header{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+header input{
+    width: 40vw;
+    font-size: 16pt;
+}
+
+header button{
+    margin: 10px 0;
+}
+
+button{
+    border: none;
+    background-color: rgb(255, 255, 104);
+    border-radius: 5px;
+    font-size: 16pt;
+    font-weight: bold;
+    padding: 1%;
+}
+
 .burgerBox{
     display: flex;
     flex-direction: row;
@@ -14,9 +40,36 @@ body{
 }
 
 .burger{
-    border: 1px solid grey;
+    border-radius: 3px;
+    background-color: bisque;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+    text-align: center;
+    max-width: 25vw;
+    min-width: 200px;
+    margin: 20px 0;
 }
 
 .burger img{
     width: 100px;
+}
+
+.burger button{
+    margin: 15px 20px;
+    padding: 3%;
+}
+
+.burger .name{
+    font-size: 18pt;
+    font-weight: bold;
+    color: brown;
+}
+
+.eaten{
+    background-color: rgb(255, 139, 139);
+    color: rgb(163, 94, 94);
+    border-radius: 5px;
+    font-size: 16pt;
+    font-weight: bold;
 }

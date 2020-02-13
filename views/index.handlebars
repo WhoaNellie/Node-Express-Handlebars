@@ -1,14 +1,15 @@
-<h1>Eat Burgers</h1>
+<header>
+    <h1>Eat Burgers</h1>
 
-<label for="burgerName">What'd'ya want?</label>
-<input type="text" name="burgerName" id="burgerName">
-<button id="newBurger">Gimme</button>
-
+    <label for="burgerName">What'd'ya want?</label>
+    <input type="text" name="burgerName" id="burgerName">
+    <button id="newBurger">Gimme</button>
+</header>
 
 <div class="burgerBox">
-    {{#each burger}}
 
-    <div class="notDevoured">
+        <div class="notDevoured">
+        {{#each burger}}
         {{#unless devoured}}
         <div class="burger">
             <p class="name">{{burger_name}}</p>
@@ -16,16 +17,22 @@
             <button data-id="{{id}}" class="devour">Devour It!</button>
         </div>
         {{/unless}}
+        {{/each}}
     </div>
+
     <div class="devoured">
+        {{#each burger}}
         {{#if devoured}}
         <div class="burger">
         <p class="name">{{burger_name}}</p>
-        <img src="../public/assets/img/burger.png" alt="A nice outline of a burger">
+        <img src="../assets/img/burger.png" alt="A nice outline of a burger">
+        <button class="eaten" data-id="{{id}}">Yum</button>
+        </div>
         {{/if}}
+        {{/each}}
     </div>
+
 
     </div>
     
-    {{/each}}
 </div>

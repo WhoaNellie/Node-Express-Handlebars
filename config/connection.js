@@ -1,5 +1,5 @@
 let mysql = require("mysql");
-let password = require("./password");
+// let password = require("./password");
 let connection;
 
 if (process.env.JAWSDB_URL) {
@@ -8,8 +8,8 @@ if (process.env.JAWSDB_URL) {
   connection = mysql.createConnection({
     host: "localhost",
     port: 3306,
-    user: "nellie",
-    password: password,
+    user: "root",
+    password: "compy386",
     database: "dt8czq68kv5bxqhk"
   });
 }
