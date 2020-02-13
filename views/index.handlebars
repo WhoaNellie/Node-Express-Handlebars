@@ -1,6 +1,6 @@
 <h1>Eat Burgers</h1>
 
-<label for="burgerName">What's your burger?</label>
+<label for="burgerName">What'd'ya want?</label>
 <input type="text" name="burgerName" id="burgerName">
 <button id="newBurger">Gimme</button>
 
@@ -9,20 +9,19 @@
     {{#each burger}}
 
     <div class="notDevoured">
-        {{#unless burger.devoured}}
+        {{#unless devoured}}
         <div class="burger">
-            <p class="name">{{burger.burger_name}}</p>
-            <img src="../public/assets/img/burger.png" alt="A nice outline of a burger">
-            <button data-id="{{burger.id}}" class="devour">Devour It!</button>
+            <p class="name">{{burger_name}}</p>
+            <img src="./assets/img/burger.png" alt="A nice outline of a burger">
+            <button data-id="{{id}}" class="devour">Devour It!</button>
         </div>
         {{/unless}}
     </div>
     <div class="devoured">
         {{#if devoured}}
-        <div class="burger" data-devoured={{burger.devoured}}>
-        <p class="name">{{burger.burger_name}}</p>
+        <div class="burger">
+        <p class="name">{{burger_name}}</p>
         <img src="../public/assets/img/burger.png" alt="A nice outline of a burger">
-        <button data-id="{{burger.id}}" class="devour">Devour It!</button>
         {{/if}}
     </div>
 

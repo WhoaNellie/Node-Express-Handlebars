@@ -5,6 +5,7 @@ let orm = {
     return new Promise((resolve, reject) => {
       let queryString = `select * from ${table}`;
       connection.query(queryString, function (err, result) {
+        // console.log(result);
         if (err) reject(err);
         resolve(result);
       });

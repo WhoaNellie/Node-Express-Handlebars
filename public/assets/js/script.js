@@ -5,7 +5,7 @@ $(document).ready(function(){
         // event.preventDefault();
         $.ajax("/api/burger", {
             type: "POST",
-            data: $("#burgerName").val().trim()
+            data: {name: $("#burgerName").val().trim()}
         }).then(function(){
             location.reload();
         });

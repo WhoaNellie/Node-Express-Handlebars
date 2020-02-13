@@ -16,3 +16,7 @@ body{
 .burger{
     border: 1px solid grey;
 }
+
+.burger img{
+    width: 100px;
+}
