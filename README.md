@@ -2,7 +2,7 @@
 
 ## Description
 
-This is my thirteenth project for UA's coding bootcamp. It is NodeJS application that allows you to manage a database of employees, roles, and departments.
+This is my thirteenth project for UA's coding bootcamp. It web application that allows you to create and destroy burgers.
 
 ## Installation
 
